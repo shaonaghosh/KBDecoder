@@ -18,7 +18,7 @@ C. Instructions for training:
 - Train with CNN attention:
 python -u train_model.py --data_file=opensub-filtered-corrupted-ef.txt --is_training --batch_size=256 --use_attn=CNN
 
--Train with RNN attention:
+- Train with RNN attention:
 python -u train_model.py --data_file=opensub-filtered-corrupted-ef.txt --is_training --batch_size=256 --use_attn=RNN 
 
 - Train with LSTM (no attention):
