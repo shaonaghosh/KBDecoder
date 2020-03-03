@@ -2,12 +2,13 @@
 Neural Networks for Text Correction and Completion in Keyboard Decoding
 
 Code for the paper on  Neural Networks for Text Correction and Completion in Keyboard Decoding on 
-Arxiv: https://arxiv.org/abs/1709.06429
+Arxiv: https://arxiv.org/abs/1709.06429. The repository has the datasets the model is trained on, data loader, noise injection module, training module, realtime inference using a Flask based server and pretrained models. 
 
 
 A. Datasets:
 opensub-filtered-corrupted-ef.txt
 train_twitter.txt
+
 
 B. Vocabulary:
 words.vocab
@@ -25,7 +26,7 @@ python -u train_model.py --data_file=opensub-filtered-corrupted-ef.txt --is_trai
 python -u train_model.py --data_file=opensub-filtered-corrupted-ef.txt --is_training --batch_size=256 --lstm_cell
 
 
-D. Instructions for Inference using the keyboard server:
+D. Instructions for Inference using the keyboard server from pretrained models:
 
 1. Setup virtualenv
 virtualenv tf
@@ -47,6 +48,9 @@ Here, retain-inputs do not actually correct, but pass the inputs straight throug
 
 F. User study results:
 userstudy-all
+
+G. Pretrained models
+enc-dec-chkpt-7500.data-00000-of-00001
 
 
 
